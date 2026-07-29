@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🧯 עמדות כיבוי אש — קיבוץ גשר</title>
+<style>
+  :root{
+    --red:#d92b2b; --red-dark:#a81f1f;
+    --bg:#f4f6f9; --card:#fff; --text:#141a21; --muted:#5d6672; --line:#e2e6ed;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#12161c; --card:#1b212a; --text:#eef2f7; --muted:#9aa5b4; --line:#2b333f; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:0 16px 48px;
+    font-family:"Segoe UI",Arial,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.65;
+  }
+  .wrap{max-width:620px;margin:0 auto}
+
+  header{
+    background:linear-gradient(135deg,var(--red),var(--red-dark));
+    color:#fff; margin:0 -16px 22px; padding:34px 20px 30px; text-align:center;
+  }
+  header .ico{font-size:52px;line-height:1}
+  header h1{margin:8px 0 4px;font-size:25px}
+  header p{margin:0;opacity:.9;font-size:15px}
+
+  .card{
+    background:var(--card); border:1px solid var(--line);
+    border-radius:14px; padding:18px 20px; margin-bottom:16px;
+  }
+  .card h2{margin:0 0 10px;font-size:18px;display:flex;align-items:center;gap:8px}
+  p{margin:0 0 12px}
+  p:last-child{margin-bottom:0}
+
+  .cta{
+    display:block; text-align:center; text-decoration:none;
+    background:var(--red); color:#fff; font-size:19px; font-weight:700;
+    padding:17px; border-radius:13px; margin:22px 0;
+    box-shadow:0 5px 16px rgba(217,43,43,.32);
+  }
+  .cta:active{transform:translateY(1px)}
+  .cta small{display:block;font-weight:400;font-size:13px;opacity:.9;margin-top:3px}
+
+  ul,ol{margin:0;padding-inline-start:20px}
+  li{margin-bottom:8px}
+  li:last-child{margin-bottom:0}
+
+  .legend{list-style:none;padding:0;margin:0}
+  .legend li{display:flex;align-items:center;gap:11px;margin-bottom:9px}
+  .dot{width:19px;height:19px;border-radius:50%;flex:none;border:3px solid}
+  .g{border-color:#1a9e4b} .o{border-color:#e28413}
+  .r{border-color:#d92b2b} .x{border-color:#7a8290;border-style:dashed}
+
+  .note{
+    background:#fff8e6; border:1px solid #f0dca8; color:#6b5310;
+    border-radius:12px; padding:14px 16px; font-size:14.5px;
+  }
+  @media (prefers-color-scheme: dark){
+    .note{background:#2e2716;border-color:#5a4a20;color:#f0dca8}
+  }
+
+  .sig{text-align:center;color:var(--muted);font-size:14px;margin-top:26px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="ico">🧯</div>
+    <h1>עמדות כיבוי אש</h1>
+    <p>קיבוץ גשר · כיתת הכוננות</p>
+  </header>
+
+  <div class="card">
+    <h2>👋 היי אבא</h2>
+    <p>בניתי אפליקציה שמראה על <b>מפת לוויין של הקיבוץ</b> איפה נמצאת כל עמדת כיבוי אש —
+       מה תקין, מה פג תוקף, איפה בכלל <b>חסרה</b> עמדה, ומתי הבדיקה הבאה.</p>
+    <p>חשבתי שזה יכול לעזור לך בתור רבש"צ, ולכיתת הכוננות.</p>
+  </div>
+
+  <a class="cta" href="./index.html">
+    🗺️ לפתיחת המפה
+    <small>נפתח ישר בדפדפן — אין מה להתקין</small>
+  </a>
+
+  <div class="card">
+    <h2>🎨 מה אומרים הצבעים</h2>
+    <ul class="legend">
+      <li><span class="dot g"></span> תקין</li>
+      <li><span class="dot o"></span> בדיקה בעוד עד 30 יום</li>
+      <li><span class="dot r"></span> פג תוקף או לא תקין</li>
+      <li><span class="dot x"></span> חסר — צריך להתקין עמדה</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🚀 איך מתחילים</h2>
+    <ol>
+      <li>לוחצים <b>➕ הוספת עמדה</b>, ואז על המקום המדויק במפה שבו נמצאת העמדה</li>
+      <li>ממלאים שם, מבנה, סוג מטף ותאריך בדיקה אחרונה —
+          תאריך הבדיקה הבאה נקבע אוטומטית שנה קדימה</li>
+      <li>בשטח: לוחצים על עמדה ואז על <b>✔ נבדק היום</b>. זהו — לחיצה אחת</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>👥 לשתף עם הכיתה</h2>
+    <p>אפשר לשלוח את הקישור הזה לכל אחד בכיתת הכוננות — הוא נפתח בכל טלפון.</p>
+    <p>שים לב: <b>הרשימה נשמרת אצל כל אחד בנפרד בטלפון שלו</b>, היא לא מסתנכרנת לבד.
+       כדי להעביר את הרשימה: <b>⬇️ גיבוי</b> שולח קובץ, והשני טוען אותו ב-<b>⬆️ טעינה</b>.</p>
+    <p>יש גם <b>🖨️ דוח</b> — מדפיס טבלה מסודרת של כל העמדות והתאריכים.</p>
+  </div>
+
+  <div class="note">
+    <b>אם אתה רוצה להיות הבעלים הרשמי של זה:</b><br>
+    תפתח חשבון חינם ב-<a href="https://github.com/signup">github.com/signup</a>
+    ותשלח לי את שם המשתמש — ואני אעביר לך את הבעלות המלאה.
+  </div>
+
+  <div class="sig">בנה: אלון 🧡</div>
+
+</div>
+</body>
+</html>
